@@ -1,0 +1,20 @@
+LISTA DE AFAZERES
+
+✔ Transferir o html/css para o formato e lógica blade @done(20-07-30 20:52)
+✔ Modelou o banco de dados @done(20-07-30 20:53)
+✔ Criar os models e migrations das entidades do banco de dados! @done(20-07-30 21:22)
+✔ Configurar as migrations e os models @done(20-08-05 18:45)
+☐ Criar os controllers da nossa aplicação (pensar quais são necessários)
+☐ Criar os seeds da aplicação
+☐ CRUD de produtos
+☐ Páginga/Área de administrador mostrando os produtos
+☐ Sistema de Login
+☐ Tornar os layouts dinâmicos (consumidos dados do banco/controller)
+☐ Upload de imagem
+
+
+☐ Carrinho
+☐ Sistema de Login usando Google/Facebook
+☐ Pagamento -> integrar com sistema de pagamento
+☐ Mandar sms para o usuário
+☐ Comentários produtos
