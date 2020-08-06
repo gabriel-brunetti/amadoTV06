@@ -4,9 +4,16 @@ LISTA DE AFAZERES
 ✔ Modelou o banco de dados @done(20-07-30 20:53)
 ✔ Criar os models e migrations das entidades do banco de dados! @done(20-07-30 21:22)
 ✔ Configurar as migrations e os models @done(20-08-05 18:45)
-☐ Criar os controllers da nossa aplicação (pensar quais são necessários)
+✔ Criar os controllers da nossa aplicação (pensar quais são necessários) @done(20-08-05 21:36)
 ☐ Criar os seeds da aplicação
-☐ CRUD de produtos
+☐ CRUD de categorias
+    ☐ CREATE
+    ☐ READ
+    ☐ UPDATE
+    ☐ DELETE
+☐ CRUD de produtos @started(20-08-05 21:55)
+☐ CRUD de usuarios
+☐ CRUD de pedidos
 ☐ Páginga/Área de administrador mostrando os produtos
 ☐ Sistema de Login
 ☐ Tornar os layouts dinâmicos (consumidos dados do banco/controller)
