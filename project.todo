@@ -11,11 +11,36 @@ LISTA DE AFAZERES
     ☐ READ
     ☐ UPDATE
     ☐ DELETE
+
+
 ☐ CRUD de produtos @started(20-08-05 21:55)
+    ☐ CREATE / Criar @started(20-08-13 20:38)
+        ✔ Exibir um formulário de cadastro; @started(20-08-13 20:38) @done(20-08-13 21:00) @lasted(22m4s)
+            ✔ Criar um formulário de cadastro @started(20-08-13 20:38) @done(20-08-13 21:58) @lasted(1h20m25s)
+        ✔ Capturar os dados do formulário; @started(20-08-13 21:00) @done(20-08-13 21:20) @lasted(20m19s)
+        ☐ Validar os dados do formulário;
+        ✔ Salvar os dados no banco; @done(20-08-13 21:58)
+            ✔ Adicionar um novo elemento no banco; @done(20-08-13 21:58)
+    ☐ READ / Ler
+        ☐ Mostrar Tabela com os produtos;
+        ✔ Exibir um produto individualmente; @done(20-08-13 20:29)
+    ☐ UPDATE / Atualizar
+        ☐ Encontrar os dados existentes no banco;
+        ☐ Exibir um formulário de edição com os dados existentes @edit;
+        ☐ Capturar os dados do formulário @update;
+        ☐ Validar os dados do formulário;
+        ☐ Salvar os dados no banco;
+    ☐ DELETE / Excluir
+        ☐ Confirmar a ação do usuário;
+        ☐ Executar a exclusão do banco de dados;
+
+
 ☐ CRUD de usuarios
 ☐ CRUD de pedidos
 ☐ Páginga/Área de administrador mostrando os produtos
 ☐ Sistema de Login
+☐ Diferenciar Admin de Usuário Comum
+
 ☐ Tornar os layouts dinâmicos (consumidos dados do banco/controller)
 ☐ Upload de imagem
 

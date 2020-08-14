@@ -11,41 +11,12 @@
     <script src="{{url('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 </head>
 <body class="col-10 offset-1 py-5">
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Descricao</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Preco</th>
-            <th scope="col">Qtd</th>
-            <th scope='col'></th>
-          </tr>
-        </thead>
-        <tbody>
-            @foreach ($produtos as $p)
-                <tr>
-                <td>{{$p->nome}}</td>
-                <td>{{$p->descricao}}</td>
-                <td>{{$p->marca}}</td>
-                <td>{{$p->preco}}</td>
-                <td>{{$p->quantidade}}</td>
-                <td> <a class="btn btn-dark" href="/teste/{{$p->id}}">Ver Mais</a> </td>
-                
-                {{-- resolvendo com For (NAO RECOMENDADO) --}}
-                {{-- @for ($i = 0; $i < count($p->imagemProdutos); $i++)
-                    <img src="{{asset($p->imagemProdutos[$i]->caminhoDaImagem)}}" alt="">        
-                @endfor --}}
 
-                {{-- resolvendo com ForEach (RECOMENDADO) --}}
-                {{-- @foreach ($p->imagemProdutos as $imagem)
-                    <img src="{{asset($imagem->caminhoDaImagem)}}" alt="">
-                @endforeach --}}
-            @endforeach
-        </tbody>
-      </table>
-      
-
+    @foreach ($produtos as $produto)
+        <p>{{$produto->nome}}</p>
+        <p>{{$produto->preco}}</p>
+        <p>{{$produto->descricao}}</p>
+    @endforeach
 
 </body>
 </html>
