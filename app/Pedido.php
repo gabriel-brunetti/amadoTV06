@@ -11,4 +11,10 @@ class Pedido extends Model
     {
         return $this->belongsTo('App\User');           
     }
+
+    // Adicionando relacionamento n:n com User
+    public function produtos()
+    {
+        return $this->belongsToMany('App\Produto');           
+    }
 }
