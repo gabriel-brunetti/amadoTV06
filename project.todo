@@ -6,8 +6,10 @@ LISTA DE AFAZERES
     ✔ Criar os models e migrations das entidades do banco de dados! @done(20-07-30 21:22)
     ✔ Configurar as migrations e os models @done(20-08-05 18:45)
     ✔ Criar os controllers da nossa aplicação (pensar quais são necessários) @done(20-08-05 21:36)
-    ☐ Relacionamento hasMany entre Pedidos e Produtos
-    ☐ Criar os seeds da aplicação
+    ✔ Relacionamento belongsToMany entre Pedidos e Produtos @done(20-08-19 20:27)
+        ✔ Models (belongsToMany) @done(20-08-19 20:27)
+        ✔ Criar a migration da tabela intermediária @done(20-08-19 20:27)
+    ✔ Criar os seeds da aplicação @started(20-08-19 20:27) @done(20-08-19 20:51) @lasted(24m45s)
 
 ---CRUD DE CATEGORIAS---
     ☐ CRUD de categorias
