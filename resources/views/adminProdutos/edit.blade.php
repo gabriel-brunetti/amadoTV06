@@ -11,61 +11,59 @@
     <script src="{{url('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')}}" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 </head>
 <body class="col-10 offset-1 py-5">
+    <h3>Atualizar Produto</h3>
 
     @if ($errors->any())
-      <div class="alert alert-danger">
-          <ul>
-              @foreach ($errors->all() as $error)
-                  <li>{{ $error }}</li>
-              @endforeach
-          </ul>
-      </div>
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
     @endif
 
-  <form action="/admin/produtos" method="POST">
+    <form action="/admin/produtos/{{ $produto->id}}" method="POST">
+        {{-- METODO PUT PARA ATUALIZAR DOS NO SERVIDOR --}}
+        @method('put')
         @csrf
         {{-- NOME --}}
         <div class="form-group row">
           <label for="nome" class="col-sm-2 col-form-label">Nome</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" value="{{$produto->nome}}">
           </div>
         </div>
         {{-- DESCRICAO --}}
         <div class="form-group row">
           <label for="descricao" class="col-sm-2 col-form-label">Descrição</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descricao">
-          </div>
-        </div>
-        {{-- MARCA --}}
-        <div class="form-group row">
-          <label for="marca" class="col-sm-2 col-form-label">Marca</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" name="marca" id="marca" placeholder="Marca">
+            <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descricao" value="{{$produto->descricao}}">
           </div>
         </div>
         {{-- QUANTIDADE --}}
         <div class="form-group row">
           <label for="quantidade'" class="col-sm-2 col-form-label">Quantidade</label>
           <div class="col-sm-10">
-            <input type="number" min="0" class="form-control" name="quantidade" id="quantidade" placeholder="Quantidade">
+            <input type="number" min="0" class="form-control" name="quantidade" id="quantidade" placeholder="Quantidade" value="{{$produto->quantidade}}">
           </div>
         </div>
         {{-- PRECO --}}
         <div class="form-group row">
           <label for="preco" class="col-sm-2 col-form-label">Preço</label>
           <div class="col-sm-10">
-            <input type="number" max="999.99" min="0" step="0.01" class="form-control" name="preco" id="preco" placeholder="Preço">
+            <input type="number" max="999.99" min="0" step="0.01" class="form-control" name="preco" id="preco" placeholder="Preço" value="{{$produto->preco}}">
           </div>
         </div>
         {{-- BOTAO --}}
         <div class="form-group row">
           <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Atualizar</button>
           </div>
         </div>
     </form>
+
+    
 
 </body>
 </html>

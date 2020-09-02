@@ -14,8 +14,10 @@
 
     @foreach ($produtos as $produto)
         <p>{{$produto->nome}}</p>
-        <p>{{$produto->preco}}</p>
+        <p>{{$produto->marca}}</p>
         <p>{{$produto->descricao}}</p>
+        <p>{{$produto->preco}}</p>
+        <hr>
     @endforeach
 
 </body>

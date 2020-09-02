@@ -25,21 +25,21 @@ LISTA DE AFAZERES
                 ✔ Criar um formulário de cadastro @started(20-08-13 20:38) @done(20-08-13 21:58) @lasted(1h20m25s)
             ✔ Capturar os dados do formulário; @started(20-08-13 21:00) @done(20-08-13 21:20) @lasted(20m19s)
             ☐ Fazer Upload de imagem;
-            ☐ Validar os dados do formulário;
+            ✔ Validar os dados do formulário; @done(20-08-26 21:44)
             ✔ Salvar os dados no banco; @done(20-08-13 21:58)
                 ✔ Adicionar um novo elemento no banco; @done(20-08-13 21:58)
         ☐ READ / Ler
             ☐ Mostrar Tabela com os produtos;
             ✔ Exibir um produto individualmente; @done(20-08-13 20:29)
-        ☐ UPDATE / Atualizar
-            ☐ Encontrar os dados existentes no banco;
-            ☐ Exibir um formulário de edição com os dados existentes @edit;
-            ☐ Capturar os dados do formulário @update;
-            ☐ Validar os dados do formulário;
-            ☐ Salvar os dados no banco;
-        ☐ DELETE / Excluir
+        ✔ UPDATE / Atualizar @started(20-08-26 20:41) @done(20-08-26 21:44) @lasted(1h3m)
+            ✔ Encontrar os dados existentes no banco; @started(20-08-26 20:41) @done(20-08-26 21:44) @lasted(1h3m2s)
+            ✔ Exibir um formulário de edição com os dados existentes @edit; @done(20-08-26 21:44)
+            ✔ Capturar os dados do formulário @update; @done(20-08-26 21:44)
+            ✔ Validar os dados do formulário; @done(20-08-26 21:44)
+            ✔ Salvar os dados no banco; @done(20-08-26 21:44)
+        ☐ DELETE / Excluir @started(20-08-26 21:49)
             ☐ Confirmar a ação do usuário;
-            ☐ Executar a exclusão do banco de dados;
+            ✔ Executar a exclusão do banco de dados; @done(20-08-26 21:49)
 
 ---CRUD DE USUARIOS---
     ☐ CRUD de usuarios 

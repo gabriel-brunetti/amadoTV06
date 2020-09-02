@@ -25,6 +25,12 @@
         {{-- resolvendo com ForEach (RECOMENDADO) --}}
         @foreach ($produto->imagemProdutos as $imagem)
             <img src="{{asset($imagem->caminhoDaImagem)}}" alt="">
-        @endforeach      
+        @endforeach  
+        
+        <form action="/admin/produtos/{{$produto->id}}" method="POST">
+            @method('delete')
+            @csrf
+            <button type="submit" class="btn badge badge-danger">Deletar</button>
+        </form>
 </body>
 </html>

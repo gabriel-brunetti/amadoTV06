@@ -16,7 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/admin/produtos', 'ProdutosController@index');
 Route::post('/admin/produtos', 'ProdutosController@store' );
 Route::get('/admin/produtos/create', 'ProdutosController@create');
+Route::get('/admin/produtos/edit/{id}', 'ProdutosController@edit');
 Route::get('/admin/produtos/{id}', 'ProdutosController@show');
+Route::put('/admin/produtos/{id}', 'ProdutosController@update');
+Route::delete('/admin/produtos/{id}', 'ProdutosController@destroy');
+
+
 
 Route::get('/', function () {
     return view('index');
