@@ -10,12 +10,6 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    // Adicionando relacionamento 1:n com Pedido
-    public function pedidos()
-    {
-        return $this->hasMany('App\Pedido');           
-    }
-
     /**
      * The attributes that are mass assignable.
      *
@@ -42,4 +36,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Adicionando relacionamento 1:n com Pedido
+    public function pedidos()
+    {
+        return $this->hasMany('App\Pedido');           
+    }
+
+    // Adicionando relacionamento n:n com Role
+    public function roles()
+    {
+        return $this->belongsToMany('App\Role', 'roles_users');
+    }
+
+    public function hasRole($role)
+    {
+        if ($this->roles()->where('name', $role)->first()){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
